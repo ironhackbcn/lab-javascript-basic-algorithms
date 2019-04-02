@@ -60,5 +60,6 @@ var lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at 
 
 var numberWords = lorem.split(" ").length;
 console.log(numberWords);
-var numberEt = lorem.split("et").length;
+lorem = lorem.replace(/[^a-zA-Z ]/g, "");
+var numberEt = lorem.split(" et ").length;
 console.log(numberEt);
