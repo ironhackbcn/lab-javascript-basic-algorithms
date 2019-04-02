@@ -15,7 +15,7 @@ if (hacker1.length > hacker2.length) {
 
 // Lorem ipsum generator
 var newHacker1 = "";
-var newHacker2 = "";
+var newHacker2 = ""
 for (i = 0; i <= hacker1.length; i++) {
   newHacker1 = hacker1[i];
   console.log(newHacker1);
