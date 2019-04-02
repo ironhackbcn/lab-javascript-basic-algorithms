@@ -16,22 +16,21 @@ if (hacker1.length > hacker2.length) {
 // Lorem ipsum generator
 var newHacker1 = "";
 var newHacker2 = ""
-for (i = 0; i <= hacker1.length; i++) {
-  newHacker1 = hacker1[i];
-  console.log(newHacker1);
+for (i = 0; i < hacker1.length; i++) {
+  newHacker1 += hacker1[i] + " ";
+  //newHacker1.toUpperCase();
+  console.log(newHacker1.toUpperCase());
 }
 
-for (x = hacker2.length; x > 0; x--) {
-  newHacker2 = hacker2[x];
+for (x = hacker2.length - 1; x > 0; x--) {
+  newHacker2 += hacker2[x];
   console.log(newHacker2);
 }
 
-/*I thought about creating an object that assigns numerical values to the letters of the alphabet
- but I feel like it would be too much work and there should be an easier way to do this... 
 if (newHacker1[0] > newHacker2[0]) {
   console.log("The driver's name goes first")
 } else if (newHacker2[0] > newHacker1[0]) {
   console.log("Yo, the navigator goes first definitely")
 } else {
   console.log("What?! You both got the same name?")
-}*/
+}
