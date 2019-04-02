@@ -4,7 +4,7 @@ var hacker1 = "Luisa";
 console.log("The driver's name is " + hacker1);
 
 var hacker2 = "John";
-//var hacker2 = prompt("What's your name?");
+var hacker2 = prompt("What's your name?");
 console.log("The navigator's name is " + hacker2);
 
 // Iteration 2: Conditionals
@@ -61,7 +61,7 @@ if (hacker2.localeCompare(hacker1) > 0) {
 
 // Palindrome Detector (need to edit regex to exclude special characters)
 var word = "home";
-//var word = prompt("Give me a word!");
+var word = prompt("Give me a word!");
 
 word = word.toLowerCase();
 word = word.replace(/[, ]+/g, "").trim();
