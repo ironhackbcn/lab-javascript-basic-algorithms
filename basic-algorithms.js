@@ -18,11 +18,10 @@ var newHacker1 = "";
 var newHacker2 = ""
 for (i = 0; i < hacker1.length; i++) {
   newHacker1 += hacker1[i] + " ";
-  //newHacker1.toUpperCase();
   console.log(newHacker1.toUpperCase());
 }
 
-for (x = hacker2.length - 1; x > 0; x--) {
+for (x = hacker2.length - 1; x >= 0; x--) {
   newHacker2 += hacker2[x];
   console.log(newHacker2);
 }
@@ -34,3 +33,20 @@ if (newHacker1[0] > newHacker2[0]) {
 } else {
   console.log("What?! You both got the same name?")
 }
+
+newStrBackwards = ""
+var newStr = prompt("enter a string!") 
+// looping through the entered string to turn it backwards
+for (y = newStr.length - 1; y > 0; y--) {
+  newStrBackwards += newStr[y];
+}
+console.log(newStrBackwards)
+//now looping through the word again to get each letter and compare it to the backward one
+for (z = 0; z < newStr.length; z++) {
+   console.log(newStr[z]);
+   if (newStr[z] === newStrBackwards[/*some kind of backwards z*/]) {
+      console.log("Hurray, palindrome")
+   } else {
+      console.log("not a palindrome")
+   }
+ }
