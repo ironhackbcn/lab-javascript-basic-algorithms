@@ -89,3 +89,34 @@ if (reversedString == newString.toLowerCase()) {
 else {
   console.log("404 Palindrome not found");
 }
+
+// Lorem ipsum generator 
+
+/*
+Generate 3 paragraphs. Store the text in a String
+Make your program count the number of words in the string
+Make your program count the number of times the latin word et appears
+*/
+
+var lipsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed porta diam. Cras volutpat fringilla magna eget auctor. Nam ex eros, dapibus at gravida vel, rhoncus id magna. Sed condimentum erat sed mattis imperdiet. Aenean augue nunc, accumsan ac porttitor eu, consequat at ligula. Vestibulum sed massa et nibh dapibus mollis. Nunc imperdiet eleifend odio. In blandit est eu efficitur sagittis.
+
+Suspendisse a maximus augue, ac maximus nibh. Nullam sit amet augue mollis odio luctus tempor et ullamcorper metus. Sed molestie vel urna vitae feugiat. Praesent cursus, dolor sit amet feugiat porta, eros est condimentum lorem, molestie mollis quam eros a orci. Cras finibus egestas scelerisque. Nam lectus nisi, suscipit sit amet placerat quis, volutpat at velit. Vestibulum venenatis, libero in commodo gravida, orci sapien euismod magna, sit amet venenatis ante nisi ut metus. Etiam interdum elit libero, eu gravida dui facilisis ut. Suspendisse dictum, purus vel volutpat iaculis, nisi mauris placerat ipsum, ac commodo dui eros ut metus. Morbi at eros libero. Maecenas odio tellus, rhoncus id vulputate eget, aliquam et massa. Nulla finibus vestibulum congue.
+
+Nulla hendrerit ante non nibh laoreet, id ullamcorper tortor ornare. Praesent faucibus sem quis interdum tincidunt. Duis id quam eget ante eleifend luctus at eu nibh. Proin vitae tellus non ligula molestie malesuada tincidunt et leo. Quisque eget elit congue, pulvinar ex non, pulvinar libero. Quisque dignissim ipsum eu ligula volutpat tempus. Fusce quis nibh commodo, convallis arcu eget, dictum ante. Suspendisse nec eleifend tellus. In vel hendrerit elit, et convallis odio. Proin vitae dui ac metus placerat malesuada. Phasellus scelerisque eget elit ut accumsan. Morbi pretium, libero vel lobortis cursus, libero neque commodo mi, sollicitudin bibendum nisi nisi ut libero.`
+
+var lipsumWords = lipsum.split(" ");
+
+var numOfWords = lipsumWords.length;
+console.log(numOfWords);
+
+var matchedWords;
+
+for (i = 0; i < numOfWords; i++ ) {
+  if (lipsumWords[i].includes('et')) {
+    matchedWords += lipsumWords[i]);
+  }
+}
+
+console.log(matchedWords.length);
+
+
