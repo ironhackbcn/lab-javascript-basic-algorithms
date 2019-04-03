@@ -58,7 +58,6 @@ else{
 var palindrome = window.prompt(`Write a word to check if is a palindrome`);
 var palindromeClean = palindrome.replace(/[^a-zA-Z0-9]+/g, '').toLowerCase();
 var lengthPalindrome = palindromeClean.length;
-var j = lengthPalindrome - 1;
 
 var reversePalindrome = "";
 for(var i = lengthPalindrome-1 ; i >=0 ; i--){
