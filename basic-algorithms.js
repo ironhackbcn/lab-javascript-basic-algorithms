@@ -59,20 +59,13 @@ var palindrome = window.prompt(`Write a word to check if is a palindrome`);
 var palindromeClean = palindrome.replace(/[^a-zA-Z0-9]+/g, '').toLowerCase();
 var lengthPalindrome = palindromeClean.length;
 var j = lengthPalindrome - 1;
-if(lengthPalindrome%2 === 0){
- middle = lengthPalindrome / 2;
+
+var reversePalindrome = "";
+for(var i = lengthPalindrome-1 ; i >=0 ; i--){
+  reversePalindrome += palindromeClean[i];
 }
-else{
-  middle = lengthPalindrome / 2 - 1;
-}
-var isPalindrome = true;
-for(i = 0 ; i < middle && isPalindrome ; i++){
-  if(palindromeClean[i] !== palindromeClean[j]){
-    isPalindrome = false;
-  }
-  j--;
-}
-if(isPalindrome){
+
+if(reversePalindrome === palindromeClean){
   console.log(`${palindrome} IS a palindrome! :D`);
 }
 else{
