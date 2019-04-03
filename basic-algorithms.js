@@ -13,7 +13,7 @@ if (hacker1.length > hacker2.length) {
   console.log("Yo, navigator got the longest name, it has", hacker2.length, "characters");
 }
 
-// Lorem ipsum generator
+
 var newHacker1 = "";
 var newHacker2 = ""
 for (i = 0; i < hacker1.length; i++) {
@@ -42,11 +42,29 @@ for (y = newStr.length - 1; y > 0; y--) {
 }
 console.log(newStrBackwards)
 //now looping through the word again to get each letter and compare it to the backward one
+
 for (z = 0; z < newStr.length; z++) {
    console.log(newStr[z]);
-   if (newStr[z] === newStrBackwards[/*some kind of backwards z*/]) {
-      console.log("Hurray, palindrome")
-   } else {
-      console.log("not a palindrome")
+    if (newStr[z] === newStrBackwards[/*some kind of backwards z*/]) {
+       console.log("Hurray, palindrome")
+    } else {
+       console.log("not a palindrome")
    }
  }
+
+var loremIpsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in elit ac augue consectetur dignissim. Mauris congue posuere augue,
+ sit amet ultricies lorem posuere at. Vivamus lacinia elementum metus, at porttitor ex pharetra non. Integer tristique ut tortor ac fermentum. Aenean velit metus,
+  vulputate in congue sit amet, egestas sed nisi. Morbi vulputate placerat iaculis. Proin lacus tortor, tempus volutpat suscipit eget,
+   faucibus sed nisi. Etiam in iaculis est, non tincidunt nunc. Sed eget orci eu dolor bibendum convallis non vel tortor.
+   Praesent efficitur leo vel mi convallis, sit amet mattis neque gravida.`
+
+// creating an array of all the words in the string
+var loremArray = loremIpsum.split(" ");
+
+var matchedWords = "";
+
+for (w = 0; w < loremArray.length; w++) { // looping through to get each individual word in array
+  if (loremArray[w].includes('et')) { // condition c
+    matchedWords++; // counting the matched ETs in loremArray
+  }
+}
