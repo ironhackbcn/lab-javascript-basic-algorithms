@@ -45,7 +45,7 @@ console.log(newStrBackwards)
 
 for (z = 0; z < newStr.length; z++) {
    console.log(newStr[z]);
-    if (newStr[z] === newStrBackwards[/*some kind of backwards z*/]) {
+    if (newStr[z] === newStrBackwards[z]) {
        console.log("Hurray, palindrome")
     } else {
        console.log("not a palindrome")
@@ -64,7 +64,7 @@ var loremArray = loremIpsum.split(" ");
 var matchedWords = "";
 
 for (w = 0; w < loremArray.length; w++) { // looping through to get each individual word in array
-  if (loremArray[w].includes('et')) { // condition c
+  if (loremArray[w].includes('et')) { // condition checking how many ETs are in Array
     matchedWords++; // counting the matched ETs in loremArray
   }
 }
