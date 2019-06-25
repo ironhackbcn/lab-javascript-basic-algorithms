@@ -51,7 +51,7 @@ console.log("Now let's reverse the characters: " + reversed);
 val1 = splitted.toString();
 val2 = reversed.toString();
 
-if (val1 === val2) { // Checks if both arrays are the same
+if (Array.from(splitted).toString() === Array.from(splitted).reverse().toString()) { // Checks if both arrays are the same
   console.log("Yay! You found a Palindrome! :D")
 } else {
   console.log("Nope! It's not a Palindrome :(")
