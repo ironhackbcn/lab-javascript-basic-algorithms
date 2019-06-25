@@ -1,5 +1,3 @@
-/*
-
 // Names and Input
 var hacker1 = "Lu"
 console.log("The driver's name is " +hacker1)
@@ -62,10 +60,9 @@ for (var k = 0; k < shorter.length; k++){
     break;
   }
 }
-*/
 
 // Palíndromo
-
+/*
 var validChar = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z",0,1,2,3,4,5,6,7,8,9]
 var sentenceArr = window.prompt("Introduce una frase").toUpperCase().split("").filter(letter => validChar.includes(letter));
 var reverseArr = [];
@@ -82,7 +79,27 @@ if (sentence == reverse){
 }else{
   console.log("No es un palíndromo... :(")
 }
+*/
 
+
+var sentence = window.prompt("Introduce una frase").toUpperCase();
+var original='';
+var reverse = '';
+
+for (var m = sentence.length-1; m >= 0; m--){
+  var chartCode = sentence[m].charCodeAt();
+  if((chartCode >= 65 && chartCode <= 90) || (chartCode >= 48 && chartCode <= 57)){
+    original = sentence[m] + original;
+    reverse += sentence[m];
+  }
+};
+
+
+if (original === reverse){
+  console.log("es un palíndromo!!!");
+}else{
+  console.log('No es un palíndromo... :(');
+}
 
 
  // Lorem ipsum generator
