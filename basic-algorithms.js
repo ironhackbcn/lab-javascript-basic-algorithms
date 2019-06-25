@@ -56,16 +56,18 @@ for (var i = 0; i < hacker1.length; i++) {
 // 9. Palindrome
 
 var userstring = prompt('Write something to check if it\'s a palindrome');
+var lowerCaseWord = userstring.toLocaleLowerCase();
+console.log(lowerCaseWord);
 var palindrome = '';
-for (var i = 0; i < userstring.length; i++) {
-  if ((userstring.charCodeAt(i) >= 65 && userstring.charCodeAt(i) <= 90) || (userstring.charCodeAt(i) >= 97 && userstring.charCodeAt(i) <= 122)) {
-    palindrome = palindrome + userstring[i].toLowerCase();
+for (var i = 0; i < lowerCaseWord.length; i++) {
+  if ((lowerCaseWord.charCodeAt(i) >= 97 && lowerCaseWord.charCodeAt(i) <= 122)) {
+    palindrome += lowerCaseWord[i];
   }
 }
 
 var reversedPalindrome = '';
 for (var i = palindrome.length - 1; i >= 0; i--) {
-  reversedPalindrome = reversedPalindrome + palindrome[i];
+  reversedPalindrome += palindrome[i];
 }
 
 if (palindrome === reversedPalindrome) {
