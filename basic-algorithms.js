@@ -37,16 +37,21 @@ if (hacker1.charAt(0) < hacker2.charAt(0)) {
   console.log("What?! You both got the same name?");
 }
 
+
+//palindrome
 var palindrome = prompt("Insert a phrase!");
 var reversePalindrome = "";
-for (var z = palindrome.length - 1; z >= 0; z--) {
-  reversePalindrome += palindrome[z];
+
+var palindromeNoSpace = palindrome.split(" ").join("");
+
+for (var z = palindromeNoSpace.length - 1; z >= 0; z--) {
+  reversePalindrome += palindromeNoSpace[z];
 }
-if (palindrome === reversePalindrome)
+if (palindromeNoSpace === reversePalindrome)
   console.log(palindrome + " is a Palindrome!");
 else {
   console.log(palindrome + " it's not a Palindrome!");
-}
+};
 
 
 // Lorem ipsum generator
